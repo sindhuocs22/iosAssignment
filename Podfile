@@ -7,6 +7,10 @@ target 'ios Assignment' do
 
   # Pods for ios Assignment
 
+  pod 'SVProgressHUD', :inhibit_warnings => true
+  pod 'Toast-Swift', '~> 5.0.1', :inhibit_warnings => true
+  pod 'SDWebImage'
+
   target 'ios AssignmentTests' do
     inherit! :search_paths
     # Pods for testing

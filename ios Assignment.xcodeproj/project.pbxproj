@@ -17,6 +17,8 @@
 		2FBFA9D32412315F006B863C /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFA9D22412315F006B863C /* CountryList.swift */; };
 		2FBFA9D624123338006B863C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFA9D524123338006B863C /* Constant.swift */; };
 		2FBFA9D824123348006B863C /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFA9D724123348006B863C /* URLHandler.swift */; };
+		2FBFA9DA241276ED006B863C /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFA9D9241276ED006B863C /* Themes.swift */; };
+		2FBFA9DC241277AB006B863C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFA9DB241277AB006B863C /* Reachability.swift */; };
 		61AF20720188DE1FD19B11FE /* Pods_ios_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE73F34E059B6E0875C9C81B /* Pods_ios_Assignment.framework */; };
 		8FF415EE3C17022BAEC6F647 /* Pods_ios_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D96EE4D8C2E1B0868EA6CAC /* Pods_ios_AssignmentTests.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		2FBFA9D22412315F006B863C /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
 		2FBFA9D524123338006B863C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		2FBFA9D724123348006B863C /* URLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
+		2FBFA9D9241276ED006B863C /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		2FBFA9DB241277AB006B863C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		3A27234AE8F2FD1A8B040660 /* Pods-ios AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios AssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios AssignmentTests/Pods-ios AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		62F166DA21616C401BA454EE /* Pods-ios Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios Assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios Assignment/Pods-ios Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		7D96EE4D8C2E1B0868EA6CAC /* Pods_ios_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +168,8 @@
 			children = (
 				2FBFA9D524123338006B863C /* Constant.swift */,
 				2FBFA9D724123348006B863C /* URLHandler.swift */,
+				2FBFA9D9241276ED006B863C /* Themes.swift */,
+				2FBFA9DB241277AB006B863C /* Reachability.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 				2FBFA99F24122950006B863C /* Sources */,
 				2FBFA9A024122950006B863C /* Frameworks */,
 				2FBFA9A124122950006B863C /* Resources */,
+				44858365CCD86D554B4446D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +311,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		44858365CCD86D554B4446D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios Assignment/Pods-ios Assignment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios Assignment/Pods-ios Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B955F44F35390767DA82814B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,6 +363,8 @@
 				2FBFA9D32412315F006B863C /* CountryList.swift in Sources */,
 				2FBFA9CB241230BB006B863C /* CountryListVM.swift in Sources */,
 				2FBFA9C824123083006B863C /* CountryListModel.swift in Sources */,
+				2FBFA9DC241277AB006B863C /* Reachability.swift in Sources */,
+				2FBFA9DA241276ED006B863C /* Themes.swift in Sources */,
 				2FBFA9A724122950006B863C /* AppDelegate.swift in Sources */,
 				2FBFA9D624123338006B863C /* Constant.swift in Sources */,
 			);
