@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F07F6AA24160D8C00079788 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07F6A924160D8C00079788 /* Extensions.swift */; };
+		2F07F6AD24160E9100079788 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F07F6AF24160E9100079788 /* Localizable.strings */; };
 		2FBFA9A724122950006B863C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFA9A624122950006B863C /* AppDelegate.swift */; };
 		2FBFA9AE24122951006B863C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBFA9AD24122951006B863C /* Assets.xcassets */; };
 		2FBFA9B124122951006B863C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBFA9AF24122951006B863C /* LaunchScreen.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F07F6A924160D8C00079788 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2F07F6AE24160E9100079788 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2FBFA9A324122950006B863C /* ios Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBFA9A624122950006B863C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FBFA9AD24122951006B863C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				2FBFA9AD24122951006B863C /* Assets.xcassets */,
 				2FBFA9AF24122951006B863C /* LaunchScreen.storyboard */,
 				2FBFA9B224122951006B863C /* Info.plist */,
+				2F07F6AF24160E9100079788 /* Localizable.strings */,
 			);
 			path = "ios Assignment";
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				2FBFA9D724123348006B863C /* URLHandler.swift */,
 				2FBFA9D9241276ED006B863C /* Themes.swift */,
 				2FBFA9DB241277AB006B863C /* Reachability.swift */,
+				2F07F6A924160D8C00079788 /* Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FBFA9B124122951006B863C /* LaunchScreen.storyboard in Resources */,
+				2F07F6AD24160E9100079788 /* Localizable.strings in Resources */,
 				2FBFA9AE24122951006B863C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +370,7 @@
 				2FBFA9D32412315F006B863C /* CountryList.swift in Sources */,
 				2FBFA9CB241230BB006B863C /* CountryListVM.swift in Sources */,
 				2FBFA9C824123083006B863C /* CountryListModel.swift in Sources */,
+				2F07F6AA24160D8C00079788 /* Extensions.swift in Sources */,
 				2FBFA9DC241277AB006B863C /* Reachability.swift in Sources */,
 				2FBFA9DA241276ED006B863C /* Themes.swift in Sources */,
 				2FBFA9A724122950006B863C /* AppDelegate.swift in Sources */,
@@ -389,6 +397,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2F07F6AF24160E9100079788 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F07F6AE24160E9100079788 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		2FBFA9AF24122951006B863C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
