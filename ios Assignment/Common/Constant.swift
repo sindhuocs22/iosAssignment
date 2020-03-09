@@ -9,8 +9,8 @@
 import Foundation
 
 class Constants {
-  
+
   //Base url for appliation
   static let Baseurl = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
-  
+
 }

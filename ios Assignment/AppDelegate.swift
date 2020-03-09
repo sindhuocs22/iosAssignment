@@ -10,16 +10,16 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  
+
   var window: UIWindow?
-  
+
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     self.setupInitialViewController()
     return true
   }
   // MARK: - initial ViewController
   func setupInitialViewController() {
-    
+
     //Initial view controller with navigation controller
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.makeKeyAndVisible()
@@ -28,4 +28,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.rootViewController = navigationController
   }
 }
-
